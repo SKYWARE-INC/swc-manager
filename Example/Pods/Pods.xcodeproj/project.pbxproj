@@ -28,7 +28,7 @@
 		8C2B0852824459606EA9EEACD9401866 /* swc-manager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 10725AA0982D6132CE020296E260A198 /* swc-manager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97BFA5E803FC9B052C958B61D0B316CF /* Pods-swc-manager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B782C54018D919080C365787491959A1 /* Pods-swc-manager_Tests-dummy.m */; };
 		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
-		ACB7A39A803BCAD870847858CB87CFE0 /* WKNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1581418E9AA2DE129729EA4CD5D242B /* WKNavigationDelegate.swift */; };
+		ACB7A39A803BCAD870847858CB87CFE0 /* SwcManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1581418E9AA2DE129729EA4CD5D242B /* SwcManager.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		BAE42774256E4AA6A7E41DC40661E7E3 /* Pods-swc-manager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBFDC267453F30B6AEF31EB656A2F5BF /* Pods-swc-manager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C014F9E29DAC840D0100901E493BE335 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
@@ -36,7 +36,6 @@
 		C8A19D9CA7DCF78D9D8544627A60E97A /* swc-manager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BC295B7F05BC45C9832C8A8877A98A /* swc-manager-dummy.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		E3E4A1F02898FBA100AFA7FC /* WKScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E4A1EF2898FBA100AFA7FC /* WKScriptMessageHandler.swift */; };
 		FB1A1CCA5119C8232D2CD24F4575ED35 /* Pods-swc-manager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B4071DB6EBCC0D9F950266F93BBA25 /* Pods-swc-manager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -111,7 +110,7 @@
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B782C54018D919080C365787491959A1 /* Pods-swc-manager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swc-manager_Tests-dummy.m"; sourceTree = "<group>"; };
 		BA2905E3962E3E17D97D800E602E792F /* Pods-swc-manager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swc-manager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C1581418E9AA2DE129729EA4CD5D242B /* WKNavigationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WKNavigationDelegate.swift; path = "swc-manager/Classes/WKNavigationDelegate.swift"; sourceTree = "<group>"; };
+		C1581418E9AA2DE129729EA4CD5D242B /* SwcManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwcManager.swift; path = "swc-manager/Classes/SwcManager.swift"; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		CC64F352224DBBD7515BECAE2663F687 /* Pods-swc-manager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swc-manager_Example-Info.plist"; sourceTree = "<group>"; };
 		CEF162CCC5C162545D0D149B9E11DE8E /* swc-manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swc-manager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +119,6 @@
 		D218969680E03FB9A140A5243DEB03F1 /* swc-manager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swc-manager-prefix.pch"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DBFDC267453F30B6AEF31EB656A2F5BF /* Pods-swc-manager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swc-manager_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E3E4A1EF2898FBA100AFA7FC /* WKScriptMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKScriptMessageHandler.swift; sourceTree = "<group>"; };
 		E5B4071DB6EBCC0D9F950266F93BBA25 /* Pods-swc-manager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swc-manager_Example-umbrella.h"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EC29FB16EC297D3F6E7BA2593B553110 /* Pods-swc-manager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swc-manager_Example.modulemap"; sourceTree = "<group>"; };
@@ -279,8 +277,7 @@
 		8C0B84C66285EBD5BA41124A75171F3E /* swc-manager */ = {
 			isa = PBXGroup;
 			children = (
-				E3E4A1EF2898FBA100AFA7FC /* WKScriptMessageHandler.swift */,
-				C1581418E9AA2DE129729EA4CD5D242B /* WKNavigationDelegate.swift */,
+				C1581418E9AA2DE129729EA4CD5D242B /* SwcManager.swift */,
 				0A1ACA518902741E9F81FF512A0AFDC3 /* Pod */,
 				515FFC41B555461143107542B5F69CA8 /* Support Files */,
 			);
@@ -546,8 +543,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB7A39A803BCAD870847858CB87CFE0 /* WKNavigationDelegate.swift in Sources */,
-				E3E4A1F02898FBA100AFA7FC /* WKScriptMessageHandler.swift in Sources */,
+				ACB7A39A803BCAD870847858CB87CFE0 /* SwcManager.swift in Sources */,
 				C8A19D9CA7DCF78D9D8544627A60E97A /* swc-manager-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

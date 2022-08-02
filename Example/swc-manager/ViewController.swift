@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  swc-manager
 //
-//  Created by mjchoi on 08/02/2022.
-//  Copyright (c) 2022 mjchoi. All rights reserved.
+//  Created by skyware0704@gmail.com on 08/01/2022.
+//  Copyright (c) 2022 skyware0704@gmail.com. All rights reserved.
 //
 
 import UIKit
