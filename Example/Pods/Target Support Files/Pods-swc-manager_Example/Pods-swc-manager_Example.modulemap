@@ -1,0 +1,6 @@
+framework module Pods_swc_manager_Example {
+  umbrella header "Pods-swc-manager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_swc_manager_Tests {
+  umbrella header "Pods-swc-manager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

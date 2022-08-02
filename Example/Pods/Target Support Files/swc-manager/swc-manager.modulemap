@@ -1,0 +1,6 @@
+framework module swc_manager {
+  umbrella header "swc-manager-umbrella.h"
+
+  export *
+  module * { export * }
+}
