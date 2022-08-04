@@ -1,5 +1,6 @@
 import XCTest
-import swc-manager
+import swc_manager
+import UIKit
 
 class Tests: XCTestCase {
     
@@ -16,6 +17,10 @@ class Tests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
+        let vc = SwcScript(methods: NSArray(array: ["detailVC", "login", "join"]))
+        for name in vc.methods {
+            print("names \(name)")
+        }
     }
     
     func testPerformanceExample() {
@@ -24,5 +29,7 @@ class Tests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
     
 }
