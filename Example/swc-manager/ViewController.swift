@@ -10,9 +10,17 @@ import UIKit
 import swc_manager
 import WebKit
 
-class ViewController: SwcScriptMsgHandlerVC {
+class ViewController: SwcScriptMsgHandlerVC, WebViewEvent {
 
     @IBOutlet weak var webView: WKWebView!
+    
+    func webViewPullToRefreshHandler(source: UIRefreshControl) {
+        
+    }
+    
+    func webViewPullToCustomHandler(source: UIRefreshControl) {
+        
+    }
     
     struct script: SwcScriptProtocol {
         var methods: [String]
@@ -32,6 +40,7 @@ class ViewController: SwcScriptMsgHandlerVC {
             print("func name \(name)")
             //webView.configuration.userContentController.add(super.`self`(), name: name as! String)
         }
+        
         
         //1. 원래꺼 호출
         // let origin: CookieProtocol
@@ -69,5 +78,3 @@ class ViewController: SwcScriptMsgHandlerVC {
     }
 
 }
-
-

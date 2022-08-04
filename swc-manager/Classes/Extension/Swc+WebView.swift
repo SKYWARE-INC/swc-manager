@@ -7,7 +7,12 @@
 
 import WebKit
 
-extension WKWebView {
+
+public protocol WebViewEvent {
+    func webViewPullToRefreshHandler(source: UIRefreshControl)
+    func webViewPullToCustomHandler(source: UIRefreshControl)
+}
+extension WKWebView: WebViewEvent {
     
     public func load(_ path: String) {
         guard let url = URL(string: path) else {return}
@@ -19,7 +24,7 @@ extension WKWebView {
     public enum PullToRefreshType {
         case none
         case embed
-        case custom(target: Any, selector: Selector)
+        case custom
     }
 
     public func setPullToRefresh(type: PullToRefreshType) {
@@ -27,7 +32,7 @@ extension WKWebView {
         switch type {
             case .none: break
             case .embed: _setPullToRefresh(target: self, selector: #selector(webViewPullToRefreshHandler(source:)))
-            case .custom(let params): _setPullToRefresh(target: params.target, selector: params.selector)
+            case .custom: _setPullToRefresh(target: self, selector: #selector(webViewPullToCustomHandler(source:)))
         }
     }
 
@@ -37,8 +42,12 @@ extension WKWebView {
         scrollView.addSubview(refreshControl)
     }
 
-    @objc func webViewPullToRefreshHandler(source: UIRefreshControl) {
+    @objc public func webViewPullToRefreshHandler(source: UIRefreshControl) {
         guard let url = self.url else { source.endRefreshing(); return }
         load(URLRequest(url: url))
+    }
+    
+    @objc public func webViewPullToCustomHandler(source: UIRefreshControl) {
+        
     }
 }
