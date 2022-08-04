@@ -1,6 +1,6 @@
 # swc-manager
 
-[![CI Status](https://img.shields.io/travis/mjchoi/swc-manager.svg?style=flat)](https://travis-ci.org/mjchoi/swc-manager)
+[![CI Status](https://img.shields.io/travis/SKYWARE-INC/swc-manager.svg?style=flat)](https://travis-ci.org/SKYWARE-INC/swc-manager)
 [![Version](https://img.shields.io/cocoapods/v/swc-manager.svg?style=flat)](https://cocoapods.org/pods/swc-manager)
 [![License](https://img.shields.io/cocoapods/l/swc-manager.svg?style=flat)](https://cocoapods.org/pods/swc-manager)
 [![Platform](https://img.shields.io/cocoapods/p/swc-manager.svg?style=flat)](https://cocoapods.org/pods/swc-manager)
@@ -22,7 +22,7 @@ pod 'swc-manager'
 
 ## Author
 
-mjchoi, mjchoi@skyware.co.kr
+skyware0704@gmail.com, SKYWARE-INC
 
 ## License
 
