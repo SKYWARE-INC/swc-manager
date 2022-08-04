@@ -22,7 +22,7 @@ pod 'swc-manager'
 
 ## Author
 
-skyware0704@gmail.com, SKYWARE-INC
+[SKYWARE-INC](http://www.skyware.co.kr) 
 
 ## License
 
