@@ -10,8 +10,14 @@ import UIKit
 import swc_manager
 import WebKit
 
-class ViewController: SwcScriptMsgHandlerVC, WebViewEvent {
+class ViewController: SwcRootVC, WebViewEvent {
 
+    class NotiMsg: SwcNotiScriptMsgHandler {
+        override func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+            
+        }
+    }
+    
     @IBOutlet weak var webView: WKWebView!
     
     func webViewPullToRefreshHandler(source: UIRefreshControl) {
@@ -31,6 +37,7 @@ class ViewController: SwcScriptMsgHandlerVC, WebViewEvent {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         //1. 앱 이름 가져오기
@@ -52,7 +59,6 @@ class ViewController: SwcScriptMsgHandlerVC, WebViewEvent {
 //            _set flag true면 루팅 체크 O
 //            _set flag false면 루팅 체크 X
         }
-        
         
         SkyShared.setUserDefault(key: "key", value: false)
         print("share key \(SkyShared.getUserBool(key: "key"))")
@@ -79,15 +85,6 @@ class ViewController: SwcScriptMsgHandlerVC, WebViewEvent {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    override func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        switch message.name {
-        case "":
-            break;
-        default:
-            print("")
-        }
     }
     
     //입 맛에 바꿀꺼면 쿠키 프로토콜 상속받아 사용해요.
