@@ -45,4 +45,18 @@ public struct Cookies: CookieProtocol {
         }
     }
     
+    public func setCookies() -> [String : AnyObject] {
+        //Local Cache Data set -> WKWebDataStore http cookie set
+        var cookieRepo: [String : AnyObject] = [:]
+        let wds = WKWebsiteDataStore.default()
+        let cookies = wds.httpCookieStore
+        cookies.getAllCookies { (cookies: [HTTPCookie]) in
+            var cookieDict = [String : AnyObject]()
+            for cookie in cookies {
+                cookieDict[cookie.name] = cookie.properties as AnyObject?
+            }
+            cookieRepo = cookieDict
+        }
+        return cookieRepo
+    }
 }

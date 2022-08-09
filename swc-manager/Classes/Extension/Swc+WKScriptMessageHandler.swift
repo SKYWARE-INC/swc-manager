@@ -4,20 +4,16 @@
 //
 //  Created by JayKim on 2022/08/02.
 //
-
 import WebKit
 
-open class SwcScriptMsgHandlerVC: UIViewController {
-
-    open override func `self`() -> Self {
-        return self
-    }
+open class SwcNotiScriptMsgHandler: NSObject {
+    
 }
 
-extension SwcScriptMsgHandlerVC: WKScriptMessageHandler {
-    
+extension SwcNotiScriptMsgHandler: WKScriptMessageHandler {
     open func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         
     }
+    
     
 }
