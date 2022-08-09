@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0427F0C36DD50845C1E144D323BDE3A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		1B0F71E82899E3DF00517DB6 /* SkyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F71E62899E39200517DB6 /* SkyShared.swift */; };
+		1B8B695528A1DE1500184F33 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14E28A0E39F00819D60 /* Device.swift */; };
+		1B8B695628A1DE3700184F33 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14328A0D30000819D60 /* Utils.swift */; };
+		1B8B695728A1DE3C00184F33 /* SwcAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14828A0D4A600819D60 /* SwcAlert.swift */; };
+		1B8B695828A1DE3F00184F33 /* SwcNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14628A0D48300819D60 /* SwcNavigator.swift */; };
 		1BB8952F28A0CC2B005DC25D /* Swc+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */; };
 		1BB8953228A0D57D005DC25D /* SwcRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8953128A0D57D005DC25D /* SwcRootVC.swift */; };
 		1BB8953428A0D656005DC25D /* Swc+UIApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8953328A0D656005DC25D /* Swc+UIApplicationDelegate.swift */; };
@@ -45,6 +49,7 @@
 		C8A19D9CA7DCF78D9D8544627A60E97A /* swc-manager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74BC295B7F05BC45C9832C8A8877A98A /* swc-manager-dummy.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
+		E32EB14A28A0D67A00819D60 /* Swc+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14128A0D2D500819D60 /* Swc+Bundle.swift */; };
 		FB1A1CCA5119C8232D2CD24F4575ED35 /* Pods-swc-manager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5B4071DB6EBCC0D9F950266F93BBA25 /* Pods-swc-manager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -137,6 +142,11 @@
 		D218969680E03FB9A140A5243DEB03F1 /* swc-manager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swc-manager-prefix.pch"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DBFDC267453F30B6AEF31EB656A2F5BF /* Pods-swc-manager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swc-manager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E32EB14128A0D2D500819D60 /* Swc+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swc+Bundle.swift"; sourceTree = "<group>"; };
+		E32EB14328A0D30000819D60 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E32EB14628A0D48300819D60 /* SwcNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwcNavigator.swift; sourceTree = "<group>"; };
+		E32EB14828A0D4A600819D60 /* SwcAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwcAlert.swift; sourceTree = "<group>"; };
+		E32EB14E28A0E39F00819D60 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		E5B4071DB6EBCC0D9F950266F93BBA25 /* Pods-swc-manager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swc-manager_Example-umbrella.h"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EC29FB16EC297D3F6E7BA2593B553110 /* Pods-swc-manager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swc-manager_Example.modulemap"; sourceTree = "<group>"; };
@@ -233,6 +243,7 @@
 			children = (
 				1BF86FE328990D9B005DF9D4 /* Swc+WKScriptMessageHandler.swift */,
 				1BDB365D289B3AED00D7EED3 /* Swc+WKWebView.swift */,
+				E32EB14128A0D2D500819D60 /* Swc+Bundle.swift */,
 				1BDB365F289B3EDC00D7EED3 /* Swc+UIView.swift */,
 				1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */,
 				1BB8953328A0D656005DC25D /* Swc+UIApplicationDelegate.swift */,
@@ -345,6 +356,9 @@
 			isa = PBXGroup;
 			children = (
 				1BB8953028A0D4B2005DC25D /* SwcVC */,
+				E32EB14B28A0D6BA00819D60 /* Device */,
+				E32EB14528A0D43000819D60 /* Navigator */,
+				E32EB13E28A0CED100819D60 /* Utils */,
 				1BDB365C289B3AA300D7EED3 /* Extension */,
 				1B0F71E52899E34400517DB6 /* Shared */,
 				1BF86FE228990D00005DF9D4 /* WebKit */,
@@ -407,6 +421,34 @@
 				8BFC69DFE0778AC6AF232F3B0A7217E0 /* Products */,
 				4AAB150FF286583E525ECE38206FACFE /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		E32EB13E28A0CED100819D60 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E32EB14328A0D30000819D60 /* Utils.swift */,
+			);
+			name = Utils;
+			path = "swc-manager/Classes/Utils";
+			sourceTree = "<group>";
+		};
+		E32EB14528A0D43000819D60 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				E32EB14628A0D48300819D60 /* SwcNavigator.swift */,
+				E32EB14828A0D4A600819D60 /* SwcAlert.swift */,
+			);
+			name = Navigator;
+			path = "swc-manager/Classes/Navigator";
+			sourceTree = "<group>";
+		};
+		E32EB14B28A0D6BA00819D60 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				E32EB14E28A0E39F00819D60 /* Device.swift */,
+			);
+			name = Device;
+			path = "swc-manager/Classes/Device";
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -619,12 +661,18 @@
 				ACB7A39A803BCAD870847858CB87CFE0 /* SwcManager.swift in Sources */,
 				C8A19D9CA7DCF78D9D8544627A60E97A /* swc-manager-dummy.m in Sources */,
 				1BDB3660289B3EDC00D7EED3 /* Swc+UIView.swift in Sources */,
+				1B8B695628A1DE3700184F33 /* Utils.swift in Sources */,
+				1B8B695528A1DE1500184F33 /* Device.swift in Sources */,
 				1BB8953228A0D57D005DC25D /* SwcRootVC.swift in Sources */,
 				1BDB365E289B3AED00D7EED3 /* Swc+WKWebView.swift in Sources */,
 				1BDB365B289B35A200D7EED3 /* CookieControl.swift in Sources */,
+				1B8B695828A1DE3F00184F33 /* SwcNavigator.swift in Sources */,
 				1BDB3662289B47FB00D7EED3 /* SwcScriptProtocol.swift in Sources */,
 				1BB8952F28A0CC2B005DC25D /* Swc+UIApplication.swift in Sources */,
 				1BF86FE428990D9C005DF9D4 /* Swc+WKScriptMessageHandler.swift in Sources */,
+				1BF86FE428990D9C005DF9D4 /* Swc+WKScriptMessageHandler.swift in Sources */,
+				1B8B695728A1DE3C00184F33 /* SwcAlert.swift in Sources */,
+				E32EB14A28A0D67A00819D60 /* Swc+Bundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
