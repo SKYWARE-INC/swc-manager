@@ -1,4 +1,4 @@
-# @swc-manager
+# swc-manager
 
 [![CI Status](https://img.shields.io/travis/SKYWARE-INC/swc-manager.svg?style=flat)](https://travis-ci.org/SKYWARE-INC/swc-manager)
 [![Version](https://img.shields.io/cocoapods/v/swc-manager.svg?style=flat)](https://cocoapods.org/pods/swc-manager)
