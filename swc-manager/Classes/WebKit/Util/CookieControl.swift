@@ -10,6 +10,7 @@ import WebKit
 
 public protocol CookieProtocol {
     func retrieveCookies(cookies linked: [String: Any], view webView: WKWebView, loadPath path: String)
+    func setCookies() -> [String : AnyObject]
 }
 
 @available(iOS 11.0, *)
