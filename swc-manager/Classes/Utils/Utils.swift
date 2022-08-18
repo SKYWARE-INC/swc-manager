@@ -7,20 +7,7 @@
 
 public struct Utils {   //여기에 util 관련 계속 추가..
     
-    public static func strToBool(yn: String) -> Bool {
-        if yn.lowercased() == "y" {
-            return true
-        }
-        return false
-    }
-    
-    public static func boolToStr(bool: Bool) -> String {
-        if bool == true {
-            return "Y"
-        }
-        return "N"
-    }
-    
+    // 날짜를 string으로 변환
     public static func getFormatDate(format: String) -> String? {
         let date = Date()
         let dateFormat = DateFormatter()
@@ -29,9 +16,18 @@ public struct Utils {   //여기에 util 관련 계속 추가..
         return currentDate
     }
     
+    // 데이터 타입 확인
+    public static func typeChk(value: Any) -> String {
+        let valType = type(of: value)
+        let str:String = "\(valType)"
+        return str
+    }
+    
+    
     // 이메일 정규성 체크
     public static func isValidEmail(email:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        // let emailRegEx = "^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9\-]+)(\.[a-zA-Z]+)+$"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
     }
@@ -47,7 +43,14 @@ public struct Utils {   //여기에 util 관련 계속 추가..
     
     // 핸드폰번호 정규성 체크
     public static func isValidPhoneNumber(phone:String) -> Bool {
-        let phoneNumberRegEx = "^01[0-1, 7][0-9]{7,8}$"
+        let phoneNumberRegEx = "^01([0-9])([0-9]{3,4})([0-9]{4})$"
+        let phoneNumberTest = NSPredicate(format: "SELF MATCHES %@", phoneNumberRegEx)
+        return phoneNumberTest.evaluate(with: phone)
+    }
+    
+    // 핸드폰번호 정규성 체크 ( -, 대쉬가 있을 때 무시하고 휴대폰 번호 인식 )
+    public static func isValidPhoneNum(phone:String) -> Bool {
+        let phoneNumberRegEx = "^01([0|1|6|7|8|9])-?([0-9]{3,4})-?([0-9]{4})$"
         let phoneNumberTest = NSPredicate(format: "SELF MATCHES %@", phoneNumberRegEx)
         return phoneNumberTest.evaluate(with: phone)
     }
@@ -58,4 +61,17 @@ public struct Utils {   //여기에 util 관련 계속 추가..
         let nickNameTest = NSPredicate(format: "SELF MATCHES %@", nickNameRegEx)
         return nickNameTest.evaluate(with: name)
     }
+    
+    // 비밀번호 확인
+    public static func isPasswordCheck(pass: String, confirmPass: String) -> Bool {
+        return pass == confirmPass ? true : false
+    }
+    
+    // emptyArray 체크 - true: 빈배열
+    public static func isEmptyArray(array value:Array<Any> = Array([:])) -> Bool {
+        let array: Array = value
+        var isEmpty: Bool { array.isEmpty }
+        return isEmpty
+    }
+    
 }
