@@ -17,10 +17,10 @@ class Tests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
-        let vc = SwcScript(methods: NSArray(array: ["detailVC", "login", "join"]))
-        for name in vc.methods {
-            print("names \(name)")
-        }
+//        let vc = SwcScript(methods: NSArray(array: ["detailVC", "login", "join"]))
+//        for name in vc.methods {
+//            print("names \(name)")
+//        }
     }
     
     func testPerformanceExample() {
