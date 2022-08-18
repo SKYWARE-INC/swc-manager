@@ -9,5 +9,7 @@ import UIKit
 
 open class SwcRootVC: UIViewController {
     
-    
+    open override func viewDidLoad() {
+        
+    }
 }

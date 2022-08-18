@@ -10,23 +10,16 @@ import UIKit
 import swc_manager
 import WebKit
 
-class ViewController: SwcRootVC, WebViewEvent {
-
+class ViewController: SwcRootVC {
+    
     class NotiMsg: SwcNotiScriptMsgHandler {
         override func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-            
+
         }
     }
-    
+
     @IBOutlet weak var webView: WKWebView!
     
-    func webViewPullToRefreshHandler(source: UIRefreshControl) {
-        
-    }
-    
-    func webViewPullToCustomHandler(source: UIRefreshControl) {
-        
-    }
     
     struct script: SwcScriptProtocol {
         var methods: [String]
@@ -35,11 +28,14 @@ class ViewController: SwcRootVC, WebViewEvent {
             return ""
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view, typically from a nib.
-        
+        let indicator = SwcIndicator(view: self.view, lvBgColor: ColorUtil.rgbColor(rgb: 0xffffff, alpah: 0.0), ctBgColor: ColorUtil.rgbColor(rgb: 0x000000, alpah: 0.6), radius: 10.0, border: 0.5)
+        indicator.showLoading()
+        Thread.sleep(forTimeInterval: 2.0)
+        indicator.hideLoading()
         //1. 앱 이름 가져오기
         if let appNm = Bundle.main.appName {
             print("app name : \(appNm)")
@@ -93,7 +89,9 @@ class ViewController: SwcRootVC, WebViewEvent {
             
         }
         
-        
+        func setCookies() -> [String : AnyObject] {
+            return [:]
+        }
     }
     
     //custom func

@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		0427F0C36DD50845C1E144D323BDE3A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		1B0F71E82899E3DF00517DB6 /* SkyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F71E62899E39200517DB6 /* SkyShared.swift */; };
+		1B7B374E28AC5D10003CD512 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B374D28AC5D10003CD512 /* NetworkMonitor.swift */; };
+		1B7B375428AC62AC003CD512 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B375028AC62AC003CD512 /* Logging.swift */; };
+		1B7B375528AC62AC003CD512 /* LogHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B375128AC62AC003CD512 /* LogHandler.swift */; };
+		1B7B375628AC62AC003CD512 /* SkyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B375228AC62AC003CD512 /* SkyLog.swift */; };
+		1B7B375728AC62AC003CD512 /* Locks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B375328AC62AC003CD512 /* Locks.swift */; };
 		1B8B695528A1DE1500184F33 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14E28A0E39F00819D60 /* Device.swift */; };
 		1B8B695628A1DE3700184F33 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14328A0D30000819D60 /* Utils.swift */; };
 		1B8B695728A1DE3C00184F33 /* SwcAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14828A0D4A600819D60 /* SwcAlert.swift */; };
 		1B8B695828A1DE3F00184F33 /* SwcNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32EB14628A0D48300819D60 /* SwcNavigator.swift */; };
+		1B8B695A28A1E39900184F33 /* SwcIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B695928A1E39900184F33 /* SwcIndicator.swift */; };
+		1B8B695D28A1E56600184F33 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B695C28A1E56600184F33 /* ColorUtil.swift */; };
 		1BB8952F28A0CC2B005DC25D /* Swc+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */; };
 		1BB8953228A0D57D005DC25D /* SwcRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8953128A0D57D005DC25D /* SwcRootVC.swift */; };
-		1BB8953428A0D656005DC25D /* Swc+UIApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8953328A0D656005DC25D /* Swc+UIApplicationDelegate.swift */; };
 		1BDB365B289B35A200D7EED3 /* CookieControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB365A289B35A200D7EED3 /* CookieControl.swift */; };
 		1BDB365E289B3AED00D7EED3 /* Swc+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB365D289B3AED00D7EED3 /* Swc+WKWebView.swift */; };
 		1BDB3660289B3EDC00D7EED3 /* Swc+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB365F289B3EDC00D7EED3 /* Swc+UIView.swift */; };
@@ -87,9 +93,15 @@
 		1868DE52B2E04D604FEFF5F853E7B84D /* swc-manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swc-manager.release.xcconfig"; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1B0F71E62899E39200517DB6 /* SkyShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyShared.swift; sourceTree = "<group>"; };
+		1B7B374D28AC5D10003CD512 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		1B7B375028AC62AC003CD512 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		1B7B375128AC62AC003CD512 /* LogHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHandler.swift; sourceTree = "<group>"; };
+		1B7B375228AC62AC003CD512 /* SkyLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyLog.swift; sourceTree = "<group>"; };
+		1B7B375328AC62AC003CD512 /* Locks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locks.swift; sourceTree = "<group>"; };
+		1B8B695928A1E39900184F33 /* SwcIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwcIndicator.swift; sourceTree = "<group>"; };
+		1B8B695C28A1E56600184F33 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swc+UIApplication.swift"; sourceTree = "<group>"; };
 		1BB8953128A0D57D005DC25D /* SwcRootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwcRootVC.swift; sourceTree = "<group>"; };
-		1BB8953328A0D656005DC25D /* Swc+UIApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swc+UIApplicationDelegate.swift"; sourceTree = "<group>"; };
 		1BDB365A289B35A200D7EED3 /* CookieControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieControl.swift; sourceTree = "<group>"; };
 		1BDB365D289B3AED00D7EED3 /* Swc+WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swc+WKWebView.swift"; sourceTree = "<group>"; };
 		1BDB365F289B3EDC00D7EED3 /* Swc+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swc+UIView.swift"; sourceTree = "<group>"; };
@@ -133,7 +145,7 @@
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B782C54018D919080C365787491959A1 /* Pods-swc-manager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swc-manager_Tests-dummy.m"; sourceTree = "<group>"; };
 		BA2905E3962E3E17D97D800E602E792F /* Pods-swc-manager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swc-manager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C1581418E9AA2DE129729EA4CD5D242B /* SwcManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwcManager.swift; path = "swc-manager/Classes/SwcManager.swift"; sourceTree = "<group>"; };
+		C1581418E9AA2DE129729EA4CD5D242B /* SwcManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwcManager.swift; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		CC64F352224DBBD7515BECAE2663F687 /* Pods-swc-manager_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swc-manager_Example-Info.plist"; sourceTree = "<group>"; };
 		CEF162CCC5C162545D0D149B9E11DE8E /* swc-manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swc-manager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,6 +233,27 @@
 			path = "swc-manager/Classes/Shared";
 			sourceTree = "<group>";
 		};
+		1B7B374C28AC5439003CD512 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C1581418E9AA2DE129729EA4CD5D242B /* SwcManager.swift */,
+			);
+			name = Manager;
+			path = "swc-manager/Classes/Manager";
+			sourceTree = "<group>";
+		};
+		1B7B374F28AC62AC003CD512 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				1B7B375028AC62AC003CD512 /* Logging.swift */,
+				1B7B375128AC62AC003CD512 /* LogHandler.swift */,
+				1B7B375228AC62AC003CD512 /* SkyLog.swift */,
+				1B7B375328AC62AC003CD512 /* Locks.swift */,
+			);
+			name = Logger;
+			path = "swc-manager/Classes/Logger";
+			sourceTree = "<group>";
+		};
 		1BB8953028A0D4B2005DC25D /* SwcVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +279,6 @@
 				E32EB14128A0D2D500819D60 /* Swc+Bundle.swift */,
 				1BDB365F289B3EDC00D7EED3 /* Swc+UIView.swift */,
 				1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */,
-				1BB8953328A0D656005DC25D /* Swc+UIApplicationDelegate.swift */,
 			);
 			name = Extension;
 			path = "swc-manager/Classes/Extension";
@@ -355,6 +387,8 @@
 		8C0B84C66285EBD5BA41124A75171F3E /* swc-manager */ = {
 			isa = PBXGroup;
 			children = (
+				1B7B374F28AC62AC003CD512 /* Logger */,
+				1B7B374C28AC5439003CD512 /* Manager */,
 				1BB8953028A0D4B2005DC25D /* SwcVC */,
 				E32EB14B28A0D6BA00819D60 /* Device */,
 				E32EB14528A0D43000819D60 /* Navigator */,
@@ -362,7 +396,6 @@
 				1BDB365C289B3AA300D7EED3 /* Extension */,
 				1B0F71E52899E34400517DB6 /* Shared */,
 				1BF86FE228990D00005DF9D4 /* WebKit */,
-				C1581418E9AA2DE129729EA4CD5D242B /* SwcManager.swift */,
 				0A1ACA518902741E9F81FF512A0AFDC3 /* Pod */,
 				515FFC41B555461143107542B5F69CA8 /* Support Files */,
 			);
@@ -427,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				E32EB14328A0D30000819D60 /* Utils.swift */,
+				1B8B695C28A1E56600184F33 /* ColorUtil.swift */,
 			);
 			name = Utils;
 			path = "swc-manager/Classes/Utils";
@@ -437,6 +471,7 @@
 			children = (
 				E32EB14628A0D48300819D60 /* SwcNavigator.swift */,
 				E32EB14828A0D4A600819D60 /* SwcAlert.swift */,
+				1B8B695928A1E39900184F33 /* SwcIndicator.swift */,
 			);
 			name = Navigator;
 			path = "swc-manager/Classes/Navigator";
@@ -446,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				E32EB14E28A0E39F00819D60 /* Device.swift */,
+				1B7B374D28AC5D10003CD512 /* NetworkMonitor.swift */,
 			);
 			name = Device;
 			path = "swc-manager/Classes/Device";
@@ -656,21 +692,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B7B375728AC62AC003CD512 /* Locks.swift in Sources */,
 				1B0F71E82899E3DF00517DB6 /* SkyShared.swift in Sources */,
-				1BB8953428A0D656005DC25D /* Swc+UIApplicationDelegate.swift in Sources */,
+				1B8B695D28A1E56600184F33 /* ColorUtil.swift in Sources */,
 				ACB7A39A803BCAD870847858CB87CFE0 /* SwcManager.swift in Sources */,
+				1B8B695A28A1E39900184F33 /* SwcIndicator.swift in Sources */,
 				C8A19D9CA7DCF78D9D8544627A60E97A /* swc-manager-dummy.m in Sources */,
 				1BDB3660289B3EDC00D7EED3 /* Swc+UIView.swift in Sources */,
 				1B8B695628A1DE3700184F33 /* Utils.swift in Sources */,
 				1B8B695528A1DE1500184F33 /* Device.swift in Sources */,
 				1BB8953228A0D57D005DC25D /* SwcRootVC.swift in Sources */,
 				1BDB365E289B3AED00D7EED3 /* Swc+WKWebView.swift in Sources */,
+				1B7B375628AC62AC003CD512 /* SkyLog.swift in Sources */,
 				1BDB365B289B35A200D7EED3 /* CookieControl.swift in Sources */,
+				1B7B375428AC62AC003CD512 /* Logging.swift in Sources */,
 				1B8B695828A1DE3F00184F33 /* SwcNavigator.swift in Sources */,
 				1BDB3662289B47FB00D7EED3 /* SwcScriptProtocol.swift in Sources */,
 				1BB8952F28A0CC2B005DC25D /* Swc+UIApplication.swift in Sources */,
 				1BF86FE428990D9C005DF9D4 /* Swc+WKScriptMessageHandler.swift in Sources */,
 				1BF86FE428990D9C005DF9D4 /* Swc+WKScriptMessageHandler.swift in Sources */,
+				1B7B374E28AC5D10003CD512 /* NetworkMonitor.swift in Sources */,
+				1B7B375528AC62AC003CD512 /* LogHandler.swift in Sources */,
 				1B8B695728A1DE3C00184F33 /* SwcAlert.swift in Sources */,
 				E32EB14A28A0D67A00819D60 /* Swc+Bundle.swift in Sources */,
 			);
