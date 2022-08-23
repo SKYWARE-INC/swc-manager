@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0427F0C36DD50845C1E144D323BDE3A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		18D8BFD228B5094A004BE64E /* WebViewProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BFD128B5094A004BE64E /* WebViewProgress.swift */; };
+		18D8BFD528B50959004BE64E /* Swc+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BFD328B50958004BE64E /* Swc+UIViewController.swift */; };
+		18D8BFD628B50959004BE64E /* Swc+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D8BFD428B50959004BE64E /* Swc+String.swift */; };
 		1B0F71E82899E3DF00517DB6 /* SkyShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F71E62899E39200517DB6 /* SkyShared.swift */; };
 		1B7B374E28AC5D10003CD512 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B374D28AC5D10003CD512 /* NetworkMonitor.swift */; };
 		1B7B375428AC62AC003CD512 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7B375028AC62AC003CD512 /* Logging.swift */; };
@@ -93,6 +96,9 @@
 		0F6A9204DCB7EDF29DCAC32BEBB64BF5 /* Pods-swc-manager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swc-manager_Example-dummy.m"; sourceTree = "<group>"; };
 		10725AA0982D6132CE020296E260A198 /* swc-manager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "swc-manager-umbrella.h"; sourceTree = "<group>"; };
 		1868DE52B2E04D604FEFF5F853E7B84D /* swc-manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "swc-manager.release.xcconfig"; sourceTree = "<group>"; };
+		18D8BFD128B5094A004BE64E /* WebViewProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewProgress.swift; sourceTree = "<group>"; };
+		18D8BFD328B50958004BE64E /* Swc+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swc+UIViewController.swift"; sourceTree = "<group>"; };
+		18D8BFD428B50959004BE64E /* Swc+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swc+String.swift"; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		1B0F71E62899E39200517DB6 /* SkyShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyShared.swift; sourceTree = "<group>"; };
 		1B7B374D28AC5D10003CD512 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
@@ -220,6 +226,14 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		18D8BFD028B5094A004BE64E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				18D8BFD128B5094A004BE64E /* WebViewProgress.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		19358ED2E838554EAF51765A3D27AB66 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +292,8 @@
 		1BDB365C289B3AA300D7EED3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				18D8BFD428B50959004BE64E /* Swc+String.swift */,
+				18D8BFD328B50958004BE64E /* Swc+UIViewController.swift */,
 				1BF86FE328990D9B005DF9D4 /* Swc+WKScriptMessageHandler.swift */,
 				1BDB365D289B3AED00D7EED3 /* Swc+WKWebView.swift */,
 				E32EB14128A0D2D500819D60 /* Swc+Bundle.swift */,
@@ -291,6 +307,7 @@
 		1BF86FE228990D00005DF9D4 /* WebKit */ = {
 			isa = PBXGroup;
 			children = (
+				18D8BFD028B5094A004BE64E /* UI */,
 				1BDB3659289B347400D7EED3 /* Util */,
 				1BDB3661289B47FB00D7EED3 /* SwcScriptProtocol.swift */,
 			);
@@ -698,6 +715,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D8BFD228B5094A004BE64E /* WebViewProgress.swift in Sources */,
 				1B7B375728AC62AC003CD512 /* Locks.swift in Sources */,
 				E3B9166228A4CFD6006D83C1 /* StringUtils.swift in Sources */,
 				1B0F71E82899E3DF00517DB6 /* SkyShared.swift in Sources */,
@@ -706,10 +724,12 @@
 				1B8B695A28A1E39900184F33 /* SwcIndicator.swift in Sources */,
 				C8A19D9CA7DCF78D9D8544627A60E97A /* swc-manager-dummy.m in Sources */,
 				1BDB3660289B3EDC00D7EED3 /* Swc+UIView.swift in Sources */,
+				18D8BFD528B50959004BE64E /* Swc+UIViewController.swift in Sources */,
 				1B8B695628A1DE3700184F33 /* Utils.swift in Sources */,
 				1B8B695528A1DE1500184F33 /* Device.swift in Sources */,
 				1BB8953228A0D57D005DC25D /* SwcRootVC.swift in Sources */,
 				1BDB365E289B3AED00D7EED3 /* Swc+WKWebView.swift in Sources */,
+				18D8BFD628B50959004BE64E /* Swc+String.swift in Sources */,
 				1B7B375628AC62AC003CD512 /* SkyLog.swift in Sources */,
 				1BDB365B289B35A200D7EED3 /* CookieControl.swift in Sources */,
 				1B7B375428AC62AC003CD512 /* Logging.swift in Sources */,
