@@ -132,11 +132,11 @@
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6745FAB61429C0106DEF73DD7066AC1B /* swc-manager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "swc-manager.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		6C17CA47C85E8C4065B946C7AE36F2C8 /* Pods-swc-manager_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-swc-manager_Example"; path = Pods_swc_manager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C17CA47C85E8C4065B946C7AE36F2C8 /* Pods_swc_manager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swc_manager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CBD3E7702A257B6465D6D10D3A9B5C9 /* Pods-swc-manager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swc-manager_Tests.modulemap"; sourceTree = "<group>"; };
 		71B3D36F75E5DE4D26655337862DCF72 /* Pods-swc-manager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swc-manager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		74BC295B7F05BC45C9832C8A8877A98A /* swc-manager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "swc-manager-dummy.m"; sourceTree = "<group>"; };
-		7685A8E83DECAE19AFEDF6FF7947879F /* Pods-swc-manager_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-swc-manager_Tests"; path = Pods_swc_manager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7685A8E83DECAE19AFEDF6FF7947879F /* Pods_swc_manager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swc_manager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7894B01F5DB617AB3AD51669C521F8F8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		809680B6264E1C09A7324843B24FA3C1 /* Pods-swc-manager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swc-manager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -398,8 +398,8 @@
 			isa = PBXGroup;
 			children = (
 				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
-				6C17CA47C85E8C4065B946C7AE36F2C8 /* Pods-swc-manager_Example */,
-				7685A8E83DECAE19AFEDF6FF7947879F /* Pods-swc-manager_Tests */,
+				6C17CA47C85E8C4065B946C7AE36F2C8 /* Pods_swc_manager_Example.framework */,
+				7685A8E83DECAE19AFEDF6FF7947879F /* Pods_swc_manager_Tests.framework */,
 				A6C44752845F66C8F2F030E9A10B76F9 /* swc_manager.framework */,
 			);
 			name = Products;
@@ -591,7 +591,7 @@
 			);
 			name = "Pods-swc-manager_Tests";
 			productName = Pods_swc_manager_Tests;
-			productReference = 7685A8E83DECAE19AFEDF6FF7947879F /* Pods-swc-manager_Tests */;
+			productReference = 7685A8E83DECAE19AFEDF6FF7947879F /* Pods_swc_manager_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
@@ -628,7 +628,7 @@
 			);
 			name = "Pods-swc-manager_Example";
 			productName = Pods_swc_manager_Example;
-			productReference = 6C17CA47C85E8C4065B946C7AE36F2C8 /* Pods-swc-manager_Example */;
+			productReference = 6C17CA47C85E8C4065B946C7AE36F2C8 /* Pods_swc_manager_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EB4AE0B4AF1B7680FC7CA41AF950CAF2 /* swc-manager */ = {
@@ -656,7 +656,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1340;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -737,7 +737,6 @@
 				1BDB3662289B47FB00D7EED3 /* SwcScriptProtocol.swift in Sources */,
 				1BB8952F28A0CC2B005DC25D /* Swc+UIApplication.swift in Sources */,
 				1BF86FE428990D9C005DF9D4 /* Swc+WKScriptMessageHandler.swift in Sources */,
-				1BF86FE428990D9C005DF9D4 /* Swc+WKScriptMessageHandler.swift in Sources */,
 				1B7B374E28AC5D10003CD512 /* NetworkMonitor.swift in Sources */,
 				1B7B375528AC62AC003CD512 /* LogHandler.swift in Sources */,
 				1B8B695728A1DE3C00184F33 /* SwcAlert.swift in Sources */,
@@ -817,7 +816,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
@@ -849,7 +848,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-swc-manager_Tests/Pods-swc-manager_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-swc-manager_Tests/Pods-swc-manager_Tests.modulemap";
@@ -882,7 +881,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-swc-manager_Tests/Pods-swc-manager_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-swc-manager_Tests/Pods-swc-manager_Tests.modulemap";
@@ -950,7 +949,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -976,7 +975,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
 				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
@@ -1007,7 +1006,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-swc-manager_Example/Pods-swc-manager_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-swc-manager_Example/Pods-swc-manager_Example.modulemap";
@@ -1041,7 +1040,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/swc-manager/swc-manager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/swc-manager/swc-manager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/swc-manager/swc-manager.modulemap";
 				PRODUCT_MODULE_NAME = swc_manager;
@@ -1072,7 +1071,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/swc-manager/swc-manager-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/swc-manager/swc-manager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/swc-manager/swc-manager.modulemap";
 				PRODUCT_MODULE_NAME = swc_manager;
@@ -1141,7 +1140,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1170,7 +1169,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-swc-manager_Example/Pods-swc-manager_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-swc-manager_Example/Pods-swc-manager_Example.modulemap";
