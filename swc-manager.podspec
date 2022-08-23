@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'swc-manager'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'SKYWARE Co., Ltd. swc-manager.'
   s.swift_version    = ['4.0','4.2','5.0']
 
@@ -18,9 +18,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = "프로젝트 공통 라이브러리 by SKYWARE Co., Ltd."
 
   s.homepage         = 'http://www.skyware.co.kr'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -40,4 +38,5 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SwiftyJSON', '~> 4.0'
 end
