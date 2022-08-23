@@ -32,10 +32,6 @@ class ViewController: SwcRootVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let indicator = SwcIndicator(view: self.view, lvBgColor: ColorUtil.rgbColor(rgb: 0xffffff, alpah: 0.0), ctBgColor: ColorUtil.rgbColor(rgb: 0x000000, alpah: 0.6), radius: 10.0, border: 0.5)
-        indicator.showLoading()
-        Thread.sleep(forTimeInterval: 2.0)
-        indicator.hideLoading()
         //1. 앱 이름 가져오기
         if let appNm = Bundle.main.appName {
             print("app name : \(appNm)")
