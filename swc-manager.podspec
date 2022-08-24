@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'swc-manager/Classes/**/*'
+  s.source_files = ["swc-manager/Classes/**/*", "Screens/**/*.{h,m,swift}"]
   
   # s.resource_bundles = {
   #   'swc-manager' => ['swc-manager/Assets/*.png']
