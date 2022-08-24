@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'swc-manager'
-  s.version          = '0.1.1'
+  s.version          = '0.1.0'
   s.summary          = 'SKYWARE Co., Ltd. swc-manager.'
   s.swift_version    = ['4.0','4.2','5.0']
 
@@ -27,9 +27,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/SKYWARE-INC/swc-manager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'swc-manager/Classes/**/*'
+  s.source_files = ["swc-manager/Classes/**/*", "Screens/**/*.{h,m,swift}"]
   
   # s.resource_bundles = {
   #   'swc-manager' => ['swc-manager/Assets/*.png']
