@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'swc-manager'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'SKYWARE Co., Ltd. swc-manager.'
   s.swift_version    = ['4.0','4.2','5.0']
 

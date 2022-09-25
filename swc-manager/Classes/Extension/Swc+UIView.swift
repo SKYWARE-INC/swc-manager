@@ -5,8 +5,7 @@
 //  Created by JayKim on 2022/08/04.
 //
 
-import Foundation
-
+import UIKit
 
 extension UIView {
 
@@ -19,5 +18,12 @@ extension UIView {
     }
 
     func getAllSubviews<T: UIView>() -> [T] { return UIView.getAllSubviews(from: self) as [T] }
+    
+    @IBInspectable var cornerRadius: CGFloat {
+        get { return self.cornerRadius }
+        set {
+            self.layer.cornerRadius = newValue
+        }
+    }
 }
 
