@@ -24,6 +24,8 @@
 		1B8B695A28A1E39900184F33 /* SwcIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B695928A1E39900184F33 /* SwcIndicator.swift */; };
 		1B8B695D28A1E56600184F33 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8B695C28A1E56600184F33 /* ColorUtil.swift */; };
 		1B9EDB7A28B5AA2F00EF99E0 /* SwcScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9EDB7928B5AA2F00EF99E0 /* SwcScreens.swift */; };
+		1BA3AAE728E110DC004F0EB8 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3AAE628E110DC004F0EB8 /* GuideView.swift */; };
+		1BA3AAE928E1142B004F0EB8 /* Swc+UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA3AAE828E1142B004F0EB8 /* Swc+UserDefaults.swift */; };
 		1BB8952F28A0CC2B005DC25D /* Swc+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */; };
 		1BB8953228A0D57D005DC25D /* SwcRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB8953128A0D57D005DC25D /* SwcRootVC.swift */; };
 		1BDB365B289B35A200D7EED3 /* CookieControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDB365A289B35A200D7EED3 /* CookieControl.swift */; };
@@ -110,6 +112,8 @@
 		1B8B695928A1E39900184F33 /* SwcIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwcIndicator.swift; sourceTree = "<group>"; };
 		1B8B695C28A1E56600184F33 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		1B9EDB7928B5AA2F00EF99E0 /* SwcScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwcScreens.swift; sourceTree = "<group>"; };
+		1BA3AAE628E110DC004F0EB8 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		1BA3AAE828E1142B004F0EB8 /* Swc+UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swc+UserDefaults.swift"; sourceTree = "<group>"; };
 		1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swc+UIApplication.swift"; sourceTree = "<group>"; };
 		1BB8953128A0D57D005DC25D /* SwcRootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwcRootVC.swift; sourceTree = "<group>"; };
 		1BDB365A289B35A200D7EED3 /* CookieControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieControl.swift; sourceTree = "<group>"; };
@@ -284,6 +288,14 @@
 			path = "../../swc-manager/Screens";
 			sourceTree = "<group>";
 		};
+		1BA3AAE528E110B9004F0EB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BA3AAE628E110DC004F0EB8 /* GuideView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1BB8953028A0D4B2005DC25D /* SwcVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +323,7 @@
 				E32EB14128A0D2D500819D60 /* Swc+Bundle.swift */,
 				1BDB365F289B3EDC00D7EED3 /* Swc+UIView.swift */,
 				1BB8952E28A0CC2B005DC25D /* Swc+UIApplication.swift */,
+				1BA3AAE828E1142B004F0EB8 /* Swc+UserDefaults.swift */,
 			);
 			name = Extension;
 			path = "swc-manager/Classes/Extension";
@@ -420,6 +433,7 @@
 		8C0B84C66285EBD5BA41124A75171F3E /* swc-manager */ = {
 			isa = PBXGroup;
 			children = (
+				1BA3AAE528E110B9004F0EB8 /* Views */,
 				1B7B374F28AC62AC003CD512 /* Logger */,
 				1B7B374C28AC5439003CD512 /* Manager */,
 				1BB8953028A0D4B2005DC25D /* SwcVC */,
@@ -733,6 +747,7 @@
 				1B0F71E82899E3DF00517DB6 /* SkyShared.swift in Sources */,
 				1B8B695D28A1E56600184F33 /* ColorUtil.swift in Sources */,
 				ACB7A39A803BCAD870847858CB87CFE0 /* SwcManager.swift in Sources */,
+				1BA3AAE728E110DC004F0EB8 /* GuideView.swift in Sources */,
 				1B8B695A28A1E39900184F33 /* SwcIndicator.swift in Sources */,
 				C8A19D9CA7DCF78D9D8544627A60E97A /* swc-manager-dummy.m in Sources */,
 				1BDB3660289B3EDC00D7EED3 /* Swc+UIView.swift in Sources */,
@@ -750,6 +765,7 @@
 				1BDB3662289B47FB00D7EED3 /* SwcScriptProtocol.swift in Sources */,
 				1BB8952F28A0CC2B005DC25D /* Swc+UIApplication.swift in Sources */,
 				1BF86FE428990D9C005DF9D4 /* Swc+WKScriptMessageHandler.swift in Sources */,
+				1BA3AAE928E1142B004F0EB8 /* Swc+UserDefaults.swift in Sources */,
 				1B7B374E28AC5D10003CD512 /* NetworkMonitor.swift in Sources */,
 				1B7B375528AC62AC003CD512 /* LogHandler.swift in Sources */,
 				1B8B695728A1DE3C00184F33 /* SwcAlert.swift in Sources */,

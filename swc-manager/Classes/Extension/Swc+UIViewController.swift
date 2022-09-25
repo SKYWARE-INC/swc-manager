@@ -5,7 +5,7 @@
 //  Created by JayKim on 2022/08/19.
 //
 
-import Foundation
+import UIKit
 
 
 extension UIViewController: SwcAlert {
@@ -74,5 +74,14 @@ extension UIViewController: SwcAlert {
         alertController.addAction(cancelAction)
         alertController.addAction(doneAction)
         target.present(alertController, animated: true, completion: nil)
+    }
+    
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
+    static func instantiate(name: String) -> Self {
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        return storyboard.instantiateViewController(identifier: identifier) as! Self
     }
 }
