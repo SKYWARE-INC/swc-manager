@@ -20,6 +20,14 @@ extension WKWebView: WebViewEvent {
         load(URLRequest(url: url))
     }
     
+    public func load(_ path: String, _ query: [URLQueryItem]) {
+        var components = URLComponents(string: path)
+        components?.queryItems = query
+        
+        guard let urlStr = components?.string, let url = URL(string: urlStr) else {return}
+        load(URLRequest(url: url))
+    }
+    
     public var refreshControl: UIRefreshControl? { (scrollView.getAllSubviews() as [UIRefreshControl]).first }
 
     public enum PullToRefreshType {
