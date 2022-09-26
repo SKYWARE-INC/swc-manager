@@ -13,7 +13,7 @@ public protocol CookieProtocol {
     func setCookies() -> [String : AnyObject]
 }
 
-@available(iOS 11.0, *)
+@available(iOS 13.0, *)
 public struct Cookies: CookieProtocol {
     public init() {}
     public func retrieveCookies(cookies linked: [String: Any], view webView: WKWebView, loadPath path: String) {

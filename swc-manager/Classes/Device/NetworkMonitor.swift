@@ -8,7 +8,7 @@
 import Foundation
 import Network
 
-@available(iOS 12.0, *)
+@available(iOS 13.0, *)
 public class NetworkMonitor {
     
     public static let shared = NetworkMonitor()
