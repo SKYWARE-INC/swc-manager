@@ -293,7 +293,8 @@
 			children = (
 				1BA3AAE628E110DC004F0EB8 /* GuideView.swift */,
 			);
-			path = Views;
+			name = Views;
+			path = "swc-manager/Classes/Views";
 			sourceTree = "<group>";
 		};
 		1BB8953028A0D4B2005DC25D /* SwcVC */ = {
