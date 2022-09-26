@@ -76,12 +76,14 @@ extension UIViewController: SwcAlert {
         target.present(alertController, animated: true, completion: nil)
     }
     
-    static var identifier: String {
+    public static var identifier: String {
         return String(describing: self)
     }
     
-    static func instantiate(name: String) -> Self {
+    @available(iOS 13.0, *)
+    public static func instantiate(name: String) -> Self {
         let storyboard = UIStoryboard(name: name, bundle: nil)
         return storyboard.instantiateViewController(identifier: identifier) as! Self
     }
+    
 }
