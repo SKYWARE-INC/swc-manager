@@ -82,7 +82,11 @@ extension UIViewController: SwcAlert {
     
     public static func instantiate(name: String) -> Self {
         let storyboard = UIStoryboard(name: name, bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+        if #available(iOS 13.0, *) {
+            return storyboard.instantiateViewController(identifier: identifier) as! Self
+        } else {
+            return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+        }
     }
     
 }
